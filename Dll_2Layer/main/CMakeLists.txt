@@ -1,13 +1,12 @@
 set (THE_MODULE "Dll_2Layer_main")
+set (Lib_project "Dll_2Layer_tool") # connect Dll_2Layer_tool.lib
 
-# INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/Dll_2Layer/tool/include)
+# include header
 INCLUDE_DIRECTORIES(../tool/include)
 
-set(LIB_PATH ${CMAKE_SOURCE_DIR}/out/intel64/Release)
-file(GLOB LIBS "${LIB_PATH}/*.lib")
-
+# output Dll_2Layer_main.exe
 ADD_EXECUTABLE(${THE_MODULE} test.cpp)
-TARGET_LINK_LIBRARIES(${THE_MODULE} ${LIBS})
+TARGET_LINK_LIBRARIES(${THE_MODULE} ${Lib_project})
 
 
 
