@@ -21,6 +21,7 @@ open cmd
 
 # project informent
 
+![圖](流程圖.png "流程圖")
 ## Dll_1Layer
 ### Dll_1Layer_math.dll
 Base dll file
