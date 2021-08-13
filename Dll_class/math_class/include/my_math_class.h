@@ -9,7 +9,7 @@ private:
     int a;
 public:
     math_classImpl(int value) { a = value; };
-    //virtual
+
     virtual void input_a(int value) override { a = value; };
     virtual int get_a() const override { return a; };
     virtual int Add(int b) override;

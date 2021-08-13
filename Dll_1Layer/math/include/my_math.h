@@ -13,7 +13,6 @@ SV_EXTERN_C SV_EXPORTS int Squared(int a, int b);
 class SV_EXPORTS math_class
 {
 public:
-    //virtual
     int Add(int a, int b);
     int Subtraction(int a, int b);
     int Multiply(int a, int b);

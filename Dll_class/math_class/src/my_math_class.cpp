@@ -1,7 +1,5 @@
 #include "my_math_class.h"
 
-
-
 int math_classImpl::Add(int b)
 {
     return a+=b;

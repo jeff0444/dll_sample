@@ -7,7 +7,6 @@
 class SV_EXPORTS math_class
 {
 public:
-    //virtual
     virtual void input_a(int value) = 0;
     virtual int get_a() const = 0;
     virtual int Add(int b) = 0;

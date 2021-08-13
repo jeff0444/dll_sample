@@ -1,8 +1,6 @@
 #ifndef SV_DEF_h_
 #define SV_DEF_h_
 
-// #ifdef EXPORT_API
-
 #ifndef SV_EXTERN_C
 #  ifdef __cplusplus && defined EXPORT_API
 #    define SV_EXTERN_C extern "C"
@@ -23,6 +21,5 @@
 #   define SV_EXPORTS
 #endif
 
-// #endif //EXPORT_API
 
 #endif //SV_DEF_h_
