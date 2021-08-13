@@ -19,7 +19,7 @@ open cmd
     run.bat
 ----------------------------------------------------
 
-# project informent
+# project information
 
 ![圖](流程圖.png "流程圖")
 ## Dll_1Layer
