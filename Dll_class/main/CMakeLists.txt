@@ -7,8 +7,3 @@ INCLUDE_DIRECTORIES(../math_class/include)
 # output Dll_class_main.exe
 ADD_EXECUTABLE(${THE_MODULE} test.cpp)
 TARGET_LINK_LIBRARIES(${THE_MODULE} ${Lib_project})
-
-# set (THE_MODULE "Dll_class_main2")
-# # output Dll_class_main.exe
-# ADD_EXECUTABLE(${THE_MODULE} test2.cpp)
-# TARGET_LINK_LIBRARIES(${THE_MODULE} "Dll_class_math2")
