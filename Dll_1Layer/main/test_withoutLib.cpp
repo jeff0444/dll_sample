@@ -81,5 +81,7 @@ int main()
     res = mydll.multiply(a,b);
     printf("Multiply %d\n", res);
 
+    mydll.release();
+
     return 0;
 }
