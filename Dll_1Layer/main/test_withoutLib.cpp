@@ -9,12 +9,14 @@ private:
     bool enable = false;
 
 public:
+    //定義每個 function 原始的樣子
     typedef int(*Add)(int a, int b);
     typedef int(*Subtraction)(int a, int b);
     typedef int(*Multiply)(int a, int b);
     typedef int(*Divided)(int a, int b);
     typedef int(*Squared)(int a, int b);
 
+    //宣告 function 在這邊使用時的名稱
     Add add;
     Subtraction subtraction;
     Multiply multiply;
@@ -28,6 +30,7 @@ public:
 
     int loadAPI()
     {
+        // 讀入 dll
         hLib = LoadLibraryA("Dll_1Layer_math.dll");
         
         // If the dll file fails, the memory address will be 0.
@@ -38,6 +41,7 @@ public:
             return 0;
         }
 
+        // 將每個 function 的 address 讀入
         add = (Add)GetProcAddress(hLib, "Add");
         subtraction = (Subtraction)GetProcAddress(hLib, "Subtraction");
         multiply = (Multiply)GetProcAddress(hLib, "Multiply");

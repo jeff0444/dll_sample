@@ -53,8 +53,7 @@ SV_EXTERN_C SV_EXPORTS int input_a_C(type_math_handle handle, int value)
 }
 SV_EXTERN_C SV_EXPORTS int get_a_C(type_math_handle handle, int &i, int &j)
 {
-    i = 0;
-    j = 0;
+    i = j = 0;
     checkHandle(handle);
     math_class *p_math_class = (math_class *)handle;
     newNumber a;
