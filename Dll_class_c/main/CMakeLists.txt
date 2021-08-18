@@ -1,5 +1,5 @@
 set (THE_MODULE "Dll_class_main_c")
-set (Lib_project "Dll_class_math_c") #connect Dll_class_math.lib
+set (Lib_project "Dll_class_math_c") #connect Dll_class_math_c.lib
 
 # include header
 INCLUDE_DIRECTORIES(../math_class/include)
